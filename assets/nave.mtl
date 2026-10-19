@@ -1,0 +1,27 @@
+# Paleta de horror cósmico para la nave del laboratorio 3.
+# Kd = color difuso (lo afecta la luz); Ke = emisión (brilla por sí mismo).
+
+# Blindaje principal: violeta abisal, como piel de algo que vive en la fosa.
+newmtl Casco_abisal
+Kd 0.260000 0.210000 0.340000
+Ke 0.000000 0.000000 0.000000
+
+# Cabina: el "ojo" de la nave, verde enfermizo que resplandece.
+newmtl Cabina_ojo
+Kd 0.250000 0.950000 0.400000
+Ke 0.120000 0.550000 0.200000
+
+# Cuerpos de los motores: metal oxidado con verdín, casi negro.
+newmtl Motores_verdin
+Kd 0.130000 0.220000 0.200000
+Ke 0.000000 0.000000 0.000000
+
+# Toberas: fuego del éter, magenta que no pertenece a este mundo.
+newmtl Toberas_eter
+Kd 0.780000 0.220000 0.950000
+Ke 0.500000 0.080000 0.700000
+
+# Paneles: negro del vacío con un tinte púrpura.
+newmtl Paneles_vacio
+Kd 0.060000 0.040000 0.090000
+Ke 0.000000 0.000000 0.000000
