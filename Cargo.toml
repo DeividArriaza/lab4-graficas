@@ -1,0 +1,19 @@
+[package]
+name = "lab4-graficas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nalgebra-glm = "0.18.0"
+# Solo el backend de X11 (bajo Wayland funciona vía XWayland), igual que en el
+# proyecto 1: evita el problema de teclas pegadas del backend de Wayland y
+# reduce dependencias.
+minifb = { version = "0.26.0", default-features = false, features = ["x11"] }
+
+# Rasterizar 1464 triángulos por cuadro sin optimizar es lento; se optimiza
+# también el perfil de desarrollo para que `cargo run` vaya fluido.
+[profile.dev]
+opt-level = 2
+
+[profile.dev.package."*"]
+opt-level = 3
